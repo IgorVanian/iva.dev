@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import * as React from 'react'
 import {
   container,
@@ -25,7 +26,13 @@ const Layout = ({ pageTitle, children } : LayoutProps) => {
         <div>
           <h1 className={siteTitle}>{SiteName}<span className={cursor}>|</span></h1>
         </div>
-        <h1 className={heading}>{pageTitle}</h1>
+        <div>
+          {
+            location.pathname != '/' &&
+            <Link to="/">Retour</Link>
+          }
+          <h1 className={heading}>{pageTitle}</h1>
+        </div>
       </div>
       <main>
         {children}
