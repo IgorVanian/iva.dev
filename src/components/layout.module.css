@@ -9,7 +9,9 @@
   line-height: 1.75;
   padding: 2.625rem 1.3125rem;
 }
-
+.site-title {
+  color: rebeccapurple;
+}
 .heading {
   color: rebeccapurple;
 }
@@ -23,4 +25,21 @@
 }
 .nav-link-text {
   color: black;
+}
+
+.cursor {
+  -webkit-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {color: transparent}
+  50% {color: rebeccapurple}
+  100% {color: transparent}
+}
+
+@-webkit-keyframes blink {
+  0% {color: transparent}
+  50% {color: rebeccapurple}
+  100% {color: transparent}
 }

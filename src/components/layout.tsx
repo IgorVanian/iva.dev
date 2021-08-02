@@ -1,7 +1,9 @@
 import * as React from 'react'
 import {
   container,
-  heading
+  heading,
+  siteTitle,
+  cursor
 } from './layout.module.css'
 import LinksComponent from './links'
 
@@ -17,8 +19,10 @@ const Layout = ({ pageTitle, children } : LayoutProps) => {
   return (
     <div className={container}>
       <title>{pageTitle}</title>
-      <h1 className={heading}>{SiteName}</h1>
       <LinksComponent />
+      <div>
+        <h1 className={siteTitle}>{SiteName}<span className={cursor}>|</span></h1>
+      </div>
       <main>
         <h1 className={heading}>{pageTitle}</h1>
         {children}
