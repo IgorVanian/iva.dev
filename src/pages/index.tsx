@@ -17,12 +17,12 @@ const Projects = [{
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="{iva.dev}">
+    <Layout pageTitle="👋 Salut!">
       <div className={HomeStyles.main}>
-        <PresentationBox title="Salut :)" linkTitle="Mon aventure professionnelle" link="/work">
+        <PresentationBox title="Je m'appelle Igor" linkTitle="Mes aventures de développeur" link="/work">
           <div>
-            <p>Je m'appelle Igor et je suis ce qu'on appelle un développeur 💻</p>
-            <div style={{height: '100px', display: 'flex'}}>
+            <p>et je suis ce qu'on appelle un développeur 💻</p>
+            <div style={{height: '100px', display: 'flex', margin: '20px 0'}}>
               <img style={{height: '100%', borderRadius: '100%'}} src={Images['igor']} alt="Moi à Budapest, en cure anti-polémique React vs Angular" />
               <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '0 10px'}}>
                 <span style={{textAlign: 'center', fontStyle: 'italic', fontSize: '0.8em'}}>Moi à Budapest, en cure anti-polémique React vs Angular</span>
@@ -60,7 +60,7 @@ const IndexPage = () => {
             <p>Très curieux, je cherche toujours à apprendre de nouvelles choses sur mon métier, que ce soit la technique, les bonnes pratiques ou tout simplement le quotidien d'un développeur moderne.</p>
             <p>
               Une étagère de bouquins sur des sujets comme l'UX ou le game design m'aide à élargir mes connaissances sur les sujet qui me tiennent à coeur et applicables dans ma vie de développeur et pourquoi pas d'entrepreneur. <br />
-              Par contre, j'avoue que j'ai pas encore trouvé le courage de commencer "Code Complete" de Steve McConnell.
+              Par contre, j'avoue que j'ai pas encore trouvé le courage de commencer "Code Complete".
             </p>
           </div>
         </PresentationBox>

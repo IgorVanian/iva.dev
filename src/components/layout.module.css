@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 .container {
   margin: auto;
-  max-width: 500px;
-  font-family: 'Montserrat', sans-serif;
+  max-width: 42rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 100%;
+  line-height: 1.75;
+  padding: 2.625rem 1.3125rem;
 }
 
 .heading {

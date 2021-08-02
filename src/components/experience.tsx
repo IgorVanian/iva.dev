@@ -25,7 +25,7 @@ const workplaces = [{
     success: [
       "Big project commissionned by german Pfeiffer Vaccuum headquarters.",
       "Working with an external consulting firm.",
-      "Communication practice in reporting to geramn IT HQ, local management and different actors involved."
+      "Communication practice in reporting to german IT HQ, local management and different actors involved."
     ]
   }]
 }, {
@@ -41,6 +41,7 @@ const workplaces = [{
   }, {
     description: "⚙️ Developping **scalable APIs** for IEM internal usage (**microservices**) and external partners involved in parking and smart cities.",
     success: [
+      "**More than 10 partner companies** served IEM services through APIs",
       "Building strong **Node.JS** experience along with overall **JavaScript** knowledge and **programming practices** (Test-driven and business-driven developpement, DRY, code conventions...)"
     ]
   }, {
@@ -51,6 +52,7 @@ const workplaces = [{
   }, {
     description: "🛠️ DevOps: Amazon Web Services, Gitlab...",
     success: [
+      "High-availability and scalability for **thousands daily connections**",
       "Configuring and using **AWS cloud solutions** like Elastic Beanstalk, Lambda, EC2, S3 and more...",
       "Pipeline configurations for continuous integration and developpement (**CI/CD**) with **Gitlab**"
     ]
