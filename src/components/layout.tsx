@@ -3,7 +3,8 @@ import {
   container,
   heading,
   siteTitle,
-  cursor
+  cursor,
+  header
 } from './layout.module.css'
 import LinksComponent from './links'
 
@@ -18,13 +19,15 @@ const SiteName = "{iva.dev}"
 const Layout = ({ pageTitle, children } : LayoutProps) => {
   return (
     <div className={container}>
-      <title>{pageTitle}</title>
-      <LinksComponent />
-      <div>
-        <h1 className={siteTitle}>{SiteName}<span className={cursor}>|</span></h1>
+      <div className={header}>
+        <title>{pageTitle}</title>
+        <LinksComponent />
+        <div>
+          <h1 className={siteTitle}>{SiteName}<span className={cursor}>|</span></h1>
+        </div>
+        <h1 className={heading}>{pageTitle}</h1>
       </div>
       <main>
-        <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
     </div>

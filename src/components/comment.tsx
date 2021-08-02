@@ -9,11 +9,12 @@ interface CommentProps {
   title: string,
   comment: string,
   stars: number,
-  dateAgo: string;
-  image: string
+  dateAgo: string,
+  image: string,
+  response: string
 }
 
-const Comment = ({ title, stars, comment, dateAgo, image }: CommentProps) => {
+const Comment = ({ title, stars, comment, dateAgo, image, response }: CommentProps) => {
   const rating = [];
 
   for (let i = 0; i < 10; i++) {
@@ -36,6 +37,21 @@ const Comment = ({ title, stars, comment, dateAgo, image }: CommentProps) => {
         <div className={CommentStyles.comment}>
           <p>{comment}</p>
         </div>
+        {
+          response &&
+          <div className={CommentStyles.responseContainer}>
+            <div className={CommentStyles.imageContainerSmall}>
+              <img src={Images['igor']} />
+            </div>
+            <div className={CommentStyles.responseComment}>
+              <span className={CommentStyles.name}>Igor Vanian</span>
+              <span className={CommentStyles.date}> · {dateAgo}</span>
+              <div className={CommentStyles.comment}>
+                <p>{response}</p>
+              </div>
+            </div>
+          </div>
+        }
       </div>
     </div>
   )

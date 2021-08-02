@@ -13,12 +13,27 @@
 }
 
 .image-container {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   border: solid 1px lightgray;
   margin-right: 20px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.image-container-small {
+  height: 25px;
+  width: 25px;
+  border: solid 1px lightgray;
+  margin-right: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-container-small > img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 .image-container > img{
@@ -45,4 +60,13 @@
 .date {
   color: #5D5D5D;
   font-size: 0.9rem;
+}
+
+.responseContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.responseComment {
+  flex: 1;
 }

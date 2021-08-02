@@ -6,7 +6,6 @@ const EmployersPage = () => {
   return (
     <Layout pageTitle="👨‍💻 Mes aventures de développeur">
       <div>
-        <p>Here's my previous work experience as an employee.</p>
         <Experience />
       </div>
     </Layout>

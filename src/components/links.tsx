@@ -21,18 +21,14 @@ const Social = [{
 
 const LinksComponent = () => {
   return (
-    <div>
-      <div style={{display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'space-between'}}>
-        {Social.map((l) => {
-          return (
-            <div>
-              <a href={l.link}>
-                <img style={{width: '25px', objectFit: 'contain'}} src={Images[l.image]} />
-              </a>
-            </div>
-          )
-        })}
-      </div>
+    <div style={{display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center'}}>
+      {Social.map((l) => {
+        return (
+            <a style={{width: '25px', height: '25px'}} href={l.link}>
+              <img style={{width: '25px', objectFit: 'contain'}} src={Images[l.image]} />
+            </a>
+        )
+      })}
     </div>
   )
 }
