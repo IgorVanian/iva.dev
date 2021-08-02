@@ -11,6 +11,10 @@ import climbing from './climbing.jpg';
 import react from './react.png';
 import nodejs from './nodejs.png';
 import js from './js.png';
+import twitter from './twitter.png';
+import github from './github.png';
+import linkedin from './linkedin.png';
+import email from './email.png';
 
 export const Images : { [key: string]: any } = {
   iem,
@@ -25,5 +29,9 @@ export const Images : { [key: string]: any } = {
   thinkKrug,
   cleanCoder,
   repeatForever,
-  climbing
+  climbing,
+  twitter,
+  github,
+  linkedin,
+  email
 }

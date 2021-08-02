@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Images } from '../images'
 
 const Social = [{
   title: 'GitHub',
@@ -14,18 +15,20 @@ const Social = [{
   link: 'https://twitter.com/IgorVanian'
 }, {
   title: 'hi@iva.dev',
-  image: 'twitter',
+  image: 'email',
   link: 'mailto:hi@iva.dev'
 }]
 
 const LinksComponent = () => {
   return (
     <div>
-      <div style={{display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'space-evenly'}}>
+      <div style={{display: 'flex', flexWrap: 'wrap', flexDirection: 'row', justifyContent: 'space-between'}}>
         {Social.map((l) => {
           return (
             <div>
-              <a href={l.link}>{l.title}</a>
+              <a href={l.link}>
+                <img style={{width: '25px', objectFit: 'contain'}} src={Images[l.image]} />
+              </a>
             </div>
           )
         })}
