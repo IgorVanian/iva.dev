@@ -8,6 +8,7 @@ import {
   header
 } from './layout.module.css'
 import LinksComponent from './links'
+import { useLocation } from '@reach/router'
 
 interface LayoutProps {
   pageTitle?: string,
@@ -18,6 +19,8 @@ const SiteName = "{iva.dev}"
 
 
 const Layout = ({ pageTitle, children } : LayoutProps) => {
+  const location = useLocation();
+  
   return (
     <div className={container}>
       <div className={header}>
