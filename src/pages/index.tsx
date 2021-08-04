@@ -35,9 +35,9 @@ const IndexPage = () => {
         <PresentationBox title="Dans ma valise il y a..." linkTitle="Ma boîte à outils" link="/toolbox">
           <div>
             <div style={{display: 'flex', margin: '50px 0', justifyContent: 'space-evenly', height: '80px'}}>
-              <img src={Images['react']} alt="React" />
-              <img src={Images['nodejs']} alt="NodeJS" />
-              <img src={Images['js']} alt="JavaScript" />
+              <img style={{width: '80px', objectFit: 'contain'}} src={Images['react']} alt="React" />
+              <img style={{width: '80px', objectFit: 'contain'}} src={Images['nodejs']} alt="NodeJS" />
+              <img style={{width: '80px', objectFit: 'contain'}} src={Images['js']} alt="JavaScript" />
             </div>
             <p>
               Actuellement spécialisé dans le développement des applications avec des technologies comme React(-Native) et NodeJS, je me suis armé ces dernières années d'une boîte à outils pour m'attaquer à de nombreux challenges. <br />
@@ -53,9 +53,9 @@ const IndexPage = () => {
         <PresentationBox title="Des fois je lis..." linkTitle="Ma bibliothèque" link="/books">
           <div>
             <div style={{display: 'flex', margin: '50px 0', justifyContent: 'space-evenly', height: '100px'}}>
-              <img src={Images['thinkKrug']} alt="Don't make me think, book by Steve Krug" />
-              <img src={Images['cleanCoder']} alt="Clean Coder, book by Robert C. Martin" />
-              <img src={Images['pragmaticProgrammer']} alt="Pragmatic Programmer, book by David Thomas and Andrew Hunt" />
+              <img style={{width: '80px', objectFit: 'contain'}} src={Images['thinkKrug']} alt="Don't make me think, book by Steve Krug" />
+              <img style={{width: '80px', objectFit: 'contain'}} src={Images['cleanCoder']} alt="Clean Coder, book by Robert C. Martin" />
+              <img style={{width: '80px', objectFit: 'contain'}} src={Images['pragmaticProgrammer']} alt="Pragmatic Programmer, book by David Thomas and Andrew Hunt" />
             </div>
             <p>Très curieux, je cherche toujours à apprendre de nouvelles choses sur mon métier, que ce soit la technique, les bonnes pratiques ou tout simplement le quotidien d'un développeur moderne.</p>
             <p>
